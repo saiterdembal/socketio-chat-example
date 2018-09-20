@@ -1,0 +1,93 @@
+body{
+    font-family: 'Noto Serif JP', sans-serif;
+    background-color:#dcdcdc;
+}
+.userNamePage{height:630px; background-color:#333;  padding-top:12%;}
+.userNamePage input#inputUserName, input#inputRoomName{
+    background:none!important;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px dotted #999;
+    color:yellow;
+    text-align:center;
+    width:35%;
+}
+
+
+
+.userNamePage input:focus{
+    box-shadow: none!important;
+    border:none!important;
+    outline:none!important;
+}
+
+.userNamePage .custom-select{
+    width:45%;
+}
+
+.chatArea, .userListArea{
+    width:100%;
+    height:400px;
+    background-color: #fafafa;
+    border:5px solid #b3c0dc;
+    padding:20px;
+}
+.chatLog{padding-left:20px; text-align: center; color:#999;}
+
+
+.textAreaLog{
+   width:100%;
+   height:20px;
+   padding-top:7px;
+   margin-top:10px;
+   border-top:1px dotted #bad5e0; 
+}
+
+.textAreaLog span{
+    color : #909fc2;
+}
+
+.textArea{
+     height:320px!important;
+     font-weight:500;
+     font-size:14px;
+     overflow-y: scroll!important;
+  
+}
+
+
+.textArea span.userName{
+    font-weight: 700;
+    color:red;
+}
+
+.ulList{margin:0; padding:0; list-style: none;}
+.roomInfo{font-size:12px; color:red;}
+.roomName, .userCount{font-weight:bold; color:black;}
+
+.userListHead{
+    width:100%; 
+    padding-bottom:5px;
+    border-bottom:1px dotted #444;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.userList{
+    list-style:none;
+    margin:0; 
+    padding:0;
+  
+}
+.userList li{
+    font-size:13px;
+    color:royalblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.userList i{
+    margin-right:10px;
+    font-size:13px;
+    color:royalblue;
+}

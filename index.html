@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.IO Chat Example</title>
+    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="userNamePage">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center text-white">
+                    USERNAME</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <input id="inputUserName" class="mt-1" type="text">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12 text-center text-white">
+                    ROOM NAME (default room is Public)</div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-sm-12 text-center">
+                    <input id="inputRoomName"  value="Public" class="mt-2" type="text"><br />
+                    <button id="btnJoin" class="btn btn-light mt-4">Join to chat</button>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="chatPage">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-9 ">
+                    <div class="chatArea">
+
+                        <div class="textArea ">
+                            <ul class="ulList "></ul>
+                        </div>
+                        <div class="textAreaLog">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    
+                    <div class="userListArea">
+                        <div class="roomInfo"></div>
+                        <div class="userListHead mt-2">User List</div>
+                        <ul class="userList">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="messageArea">
+                <div class="row mt-3">
+                    <div class="col-sm-11">
+                        <input class="form-control inputText" type="text" placeholder="">
+                    </div>
+                    <div class="col-sm-1">
+                        <button class="w-100 btn btn-success inputButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
